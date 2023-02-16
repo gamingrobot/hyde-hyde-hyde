@@ -5,6 +5,7 @@
     {{ partial "sidebar.html" . }}
         <div class="content container">
             {{ block "content" . }}{{ end }}
+            {{ partial "copyright.html" . }}
         </div>
         {{ block "footer" . }}{{ end }}
     </body>

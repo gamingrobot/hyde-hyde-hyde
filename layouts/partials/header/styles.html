@@ -1,5 +1,7 @@
 {{ partial "header/styles-highlight.html" . }}
 
+<link rel="stylesheet" href="{{ "/css/fonts.css" | absURL }}" type="text/css">
+
 {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
 
 {{ $style := resources.Get "scss/hyde-hyde.scss" | toCSS $options | fingerprint }}

@@ -1,0 +1,30 @@
+{{ define "header" }}
+    {{ partial "page-single/variables-init.html" . }}
+    {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+<article>
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+      <span class="post__subtitle">
+        {{.}}
+      </span>
+      {{ end }} 
+      {{ partial "page-single/post-meta.html" . }}
+    </header>
+    <div class="search-form">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+</article>
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "page-single/footer.html" . }}
+{{ partial "page-single/variables-deinit.html" . }}
+<script src="/js/fuse.basic.min.js"></script>
+<script src="/js/fastsearch.js"></script>
+{{ end }}

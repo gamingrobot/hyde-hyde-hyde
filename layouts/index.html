@@ -25,12 +25,9 @@
         {{ .Summary }}
         {{ end }}
         </span>
-        {{ if .Truncated }}
-          ... <a class="read-more-symbol" href="{{ .RelPermalink }}">➦</a>
-        {{ end }}
-        </div>
-        {{ .Scratch.Delete "draftPage" }}
-     {{ end }}
+      </div>
+      {{ .Scratch.Delete "draftPage" }}
+    {{ end }}
   </div>
   {{ partial "pagination.html" . }}
 {{ end }}
@@ -40,5 +37,4 @@
     <!-- Google Analytics -->
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
-  {{ partial "footer/font-awesome-js.html" . }}
 {{ end }}
