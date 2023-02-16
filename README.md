@@ -16,6 +16,7 @@ TODO:
 MermaidJS
 Fix Note/Warning/Error notes
 Fix code sections (copy button?)
+Page views without google
 
 ## Usage
 

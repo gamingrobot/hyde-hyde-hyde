@@ -71,7 +71,7 @@ function loadSearch() {
 //
 function executeSearch(term) {
   let results = fuse.search(term); // the actual query being run using fuse.js
-  console.log(results);
+  //console.log(results);
   let searchitems = ''; // our results bucket
 
   if (results.length === 0) { // no results based on what was typed into the input box
