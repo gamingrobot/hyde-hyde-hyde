@@ -7,50 +7,59 @@
     font-size: $small-device-font-size;
   }
   .sidebar {
+    transform: translateX(-$sidebar-width);
+    -webkit-transform: translateX(-$sidebar-width);
+    transition: transform .4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    width: $sidebar-width;
+    z-index: 95;
     li {
-      padding: .1rem 0;
-    }
-    .container {
-      padding-left: 0;
-      padding-right: 0;
+      padding: .3rem 0;
+      font-size: 23px;
     }
   }
   .hidden-tablet {
     display: none;
   }
-  .sidebar-about,
-  .copyright {
-    display: none;
-  }
-  .sidebar {
-    margin: 0;
-    padding: 0;
-  }
-  .menu-content {
-    padding: 0 0 0 0px;
-    max-height: 0;
-    overflow: hidden;
-    margin-top: 0; }
-  .collapsible-menu {
+  .sidebar-menu {
     padding: 0px 0px;
   }
-  .collapsible-menu ul {
+  .sidebar-menu ul {
     list-style-type: none;
     padding: 0;
   }
-  .collapsible-menu li {
+  .sidebar-menu li {
     display: block;
   }
-  .collapsible-menu a {
+  .sidebar-menu a {
     text-decoration: none;
     cursor: pointer; }
-  .collapsible-menu label {
-    background: url(/img/menu-open.svg) no-repeat left center;
-    background-position: 1.5rem;
+
+  //For hiding/showing the sidebar
+  .sidebar-wrapper label {
     display: block;
     cursor: pointer;
-    color: #fff;
-    padding: 10px 0 10px 0px; }
+    color: $sidebar-color;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    width: 3rem;
+    height: 2rem;
+    z-index: 99;
+    overflow: hidden;
+    //outline: dashed 1px black;
+  }
+
+  .sidebar-wrapper label svg {
+    display: block;
+    margin: auto;
+    height: 2rem;
+    width: 2rem;
+  }
 
   input#menuToggle {
     display: none;
@@ -60,17 +69,15 @@
   }
 
   input#menuToggle:checked + label {
-    background-image: url(/img/menu-close.svg);
-    background-position: 1.5rem;
     color: #fff;
   }
 
-  input#menuToggle:checked ~ .menu-content {
-    max-height: 100% !important;
+  input#menuToggle:checked ~ .sidebar {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transition: transform .4s ease;
   }
-  .social {
-    padding: 1em 0 1em 0;
-  }
+
 }
 
 // tablet/medium device ~768px+
@@ -112,9 +119,6 @@
   .col-sm-8 {
     width: 66.66666667%;
   }
-  .project__title {
-    margin-top: 0.2rem;
-  }
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -125,6 +129,7 @@
       }
     }
   }
+
   input#menuToggle,
   input#menuToggle + label {
     display: none;
@@ -149,9 +154,6 @@
   .col-md-8 {
     float: left;
     width: 66.66666667%;
-  }
-  .portfolio-container {
-    width: 68rem;
   }
 }
 

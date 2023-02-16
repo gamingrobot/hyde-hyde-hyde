@@ -10,6 +10,12 @@ __`hyde-hyde-hyde`__ is a [Hugo](https://gohugo.io)'s theme inspired and derived
 - Remove social from sidebar
 - Move copyright to bottom
 - Remove comments
+- Added search
+
+TODO:
+MermaidJS
+Fix Note/Warning/Error notes
+Fix code sections (copy button?)
 
 ## Usage
 

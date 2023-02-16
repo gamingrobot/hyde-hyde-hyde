@@ -51,14 +51,6 @@
   font-weight: 300;
 }
 
-.social {
-  text-align: center;
-  a {
-    padding: 0 4px;
-    @include link-no-decoration();
-  }
-}
-
 .img--circle {
 	border-radius: 50%;
 }
@@ -71,4 +63,3 @@
 .img--caption {
 	font-style: italic;
 }
-
