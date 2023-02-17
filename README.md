@@ -14,10 +14,7 @@ __`hyde-hyde-hyde`__ is a [Hugo](https://gohugo.io)'s theme inspired and derived
 - Center content
 - Add better note shortcodes
 - Add support for GoatCounter
-
-### TODO
-
- - Add copy button to code sections
+- Use chroma instead of highlightjs
 
 ## Usage
 
@@ -54,10 +51,6 @@ __`hyde-hyde-hyde`__ essentially inherits most of Hyde's [options](https://githu
 *  `mermaid = true`: Enable mermaid.js diagrams
    * `mermaid_theme = "default"` Select a [mermaid.js theme](https://mermaid.js.org/config/theming.html)
    * `mermaid_align = "center"` Select an alignment for diagrams
-
-* `highlightjs = true`: use [highlight.js](https://highlightjs.org) instead of Hugo built-in support for code highlighting
-  * `highlightjs_style="highlight-style"`: only when `highlightjs = true`, please choose one of many _highlight.js_'s [styles](https://highlightjs.org/static/demo).
-  * `highlightjs_languages = ["swift", "objectivec"]` 
 
 * `postNavigation = true|false` (default `true`): Setting to `false` will disable the navigation _Previous Post_/ _Next Post_
 

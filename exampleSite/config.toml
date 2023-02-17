@@ -16,8 +16,13 @@ theme = "hyde-hyde-hyde"
 
 [markup]
   [markup.highlight]
-    noClasses = false
-    style = ""
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    noClasses = true
+    noHl = true
+    style = 'github'
+    tabWidth = 4
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -45,16 +50,6 @@ theme = "hyde-hyde-hyde"
     mermaid = true
     mermaid_theme = "default"
     mermaid_align = "center"
-
-    # https://highlightjs.org
-    highlightjs = true
-    highlightjs_style = "github"
-    
-    # please choose either GraphComment or Disqus or Utterances
-    #GraphCommentId = "..."
-    #UtterancesRepo = "..." # https://utteranc.es/
-    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
-    #UtterancesTheme = "..." # github-light or github-dark
 
     # Table of contents
     toc = "tocbot" # none, "hugo", or "tocbot"
