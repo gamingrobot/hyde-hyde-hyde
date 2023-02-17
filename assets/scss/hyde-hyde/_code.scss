@@ -5,7 +5,7 @@ pre {
 	background-color: $code-background-color !important; //override chroma theme
 	border-radius: 6px;
 	padding: 1em;
-	overflow-x: scroll;
+	overflow-x: auto;
 	code {
 		font-size: $code-fence-font-size;
 		line-height: $root-line-height;
