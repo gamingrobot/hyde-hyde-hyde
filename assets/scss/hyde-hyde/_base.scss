@@ -53,8 +53,7 @@ figure {
 }
 
 %quotebox {
-	padding: .8889rem;
-	margin-top: 1rem;
+	padding-left: 1rem;
 	margin-left: 0px;
 	margin-right: 0px;
 	//border-radius: 6px;
@@ -67,20 +66,32 @@ figure {
 }
 
 blockquote {
-	background-color: #fafafa;
+	//background-color: #fafafa;
 	border-left-color: #e6e6e6;
 	@extend %quotebox;
 }
 
-.important {
-	background-color: #fbf8e8;
-	border-left-color: #fee450;
+.tip {
+	background-color: rgba(123, 247, 144, 0.2);
+	border-left-color: #03b303;
+	@extend %quotebox;
+}
+
+.info {
+	background-color: #e1f5fe;
+	border-left-color: #0070cb;
 	@extend %quotebox;
 }
 
 .warning {
-	background-color: #f2dbdc;
-	border-left-color: #ae272f;
+	background-color: rgb(255, 243, 205);
+	border-left-color: #ef9c03;
+	@extend %quotebox;
+}
+
+.danger {
+	background-color: rgba(248, 215, 218, 0.56);
+	border-left-color: #df3c30;
 	@extend %quotebox;
 }
 

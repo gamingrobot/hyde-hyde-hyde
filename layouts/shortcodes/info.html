@@ -1,0 +1,4 @@
+<blockquote class="info">
+    <strong>{{ .Get 0 | default "Info" | markdownify }}</strong><br>
+    {{ .Inner | markdownify }}
+</blockquote>

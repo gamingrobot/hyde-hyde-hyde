@@ -1,0 +1,4 @@
+<blockquote class="tip">
+    <strong>{{ .Get 0 | default "Tip" | markdownify }}</strong><br>
+    {{ .Inner | markdownify }}
+</blockquote>

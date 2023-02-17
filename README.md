@@ -11,11 +11,12 @@ __`hyde-hyde-hyde`__ is a [Hugo](https://gohugo.io)'s theme inspired and derived
 - Move copyright to bottom
 - Remove comments
 - Added search
+- Center content
+- Add better note shortcodes
 
-### TODO:
-MermaidJS
-Fix Note/Warning/Error notes
-Fix code sections (copy button?)
+### TODO
+ - MermaidJS
+ - Add copy button to code sections
 
 ## Usage
 

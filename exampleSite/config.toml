@@ -8,10 +8,16 @@ theme = "hyde-hyde-hyde"
 ## Hugo Built-in Features
 # googleAnalytics = "your-google-analytics-id"
 # enableRobotsTXT = true
+# enableEmoji = true
 
 # summarylength = 30
 
 #paginate = 5
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = ""
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

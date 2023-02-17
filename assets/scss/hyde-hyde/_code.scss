@@ -31,9 +31,9 @@ pre {
 }
 
 %code-style-npf {
-	padding: .1em .1em;
-	color: #ab5979;
-	border-radius: 3px;
+	padding: 3px 5px;
+	border-radius: 4px;
+	background-color: #f3f3f3;
 }
 
 a {
@@ -53,6 +53,6 @@ code {
 	font-size: $code-fence-font-size;
 	line-height: $root-line-height;
 	white-space: pre;
-	border: 1px solid $gray-3;
-	border-radius: 4px;
+	background-color: #f7f7f7;
+	border-radius: 6px;
 }
