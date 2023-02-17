@@ -1,9 +1,9 @@
-name = "hyde-hyde"
+name = "hyde-hyde-hyde"
 license = "MIT"
 licenselink = "https://github.com/gamingrobot/hyde-hyde-hyde/blob/master/LICENSE.md"
 description = "A simply cool Hyde inspired theme"
-tags = ["blog", "theme", "hyde", "highlight.js", "google analytics", "disqus", "personal", "syntax highlighting", "responsive", "graphcomment"]
-features = ["blog", "theme", "highlight.js", "responsive", "disqus", "graphcomment", "portfolio"]
+tags = ["blog", "theme", "hyde", "highlight.js", "google analytics", "syntax highlighting", "responsive", "graphcomment"]
+features = ["blog", "theme", "highlight.js", "responsive",]
 homepage = "https://github.com/gamingrobot/hyde-hyde-hyde"
 min_version = "0.43"
 

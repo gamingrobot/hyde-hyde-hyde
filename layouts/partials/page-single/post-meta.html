@@ -21,7 +21,7 @@
       {{ $total := len . }}
       {{ if gt $total 0 }}
           <br/>
-          {{ $subtotal := sub $total 1 }} <i class="fas fa-tags"></i>
+          {{ $subtotal := sub $total 1 }}
           {{ range $i, $tag := . }}
           <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
           {{ if lt $i $subtotal }} {{ end }}

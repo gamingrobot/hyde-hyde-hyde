@@ -31,6 +31,15 @@ ul {
   margin: 0;
 }
 
+.toc-wrapper {
+  display: none !important;
+}
+
+input#menuToggle,
+  input#menuToggle + label {
+  display: none !important;
+}
+
 .sidebar {
   display: none !important;
 }
