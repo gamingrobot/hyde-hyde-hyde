@@ -38,6 +38,9 @@ theme = "hyde-hyde-hyde"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
     showBuiltWith = true
 
+    # https://www.goatcounter.com/
+    # goatcounter = "your-goatcounter-site-code"
+
     # https://mermaid.js.org/
     mermaid = true
     mermaid_theme = "default"

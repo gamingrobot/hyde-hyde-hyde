@@ -1,8 +1,9 @@
 {{ $include_toc := .Params.include_toc}}
 {{ if .Site.GoogleAnalytics }}
   <!-- Google Analytics -->
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+{{ partial "goatcounter.html" . }}
 {{ partial "highlight-js.html" . }}
 {{ partial "mermaid.html" . }}
 {{ with .Site.Params.toc }}

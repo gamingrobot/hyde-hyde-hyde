@@ -35,6 +35,7 @@
 {{ define "footer" }}
   {{ if .Site.GoogleAnalytics }}
     <!-- Google Analytics -->
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
   {{ end }}
+  {{ partial "goatcounter.html" . }}
 {{ end }}
