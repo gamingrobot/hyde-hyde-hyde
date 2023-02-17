@@ -2,7 +2,7 @@
 title = "Search"
 showpagemeta = false
 showcomments = false
-highlight = false
+highlightjs = false
 layout = "search"
 +++
 

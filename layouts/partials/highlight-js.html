@@ -1,5 +1,4 @@
-{{- if (.Site.Params.highlightjs) -}}
-{{ if (or (not (isset .Params "highlight")) (and (isset .Params "highlight") .Params.highlight)) }}
+{{- if (.Param "highlightjs") -}}
     {{ $.Scratch.Set "hl_languages" (union (.Site.Params.highlightjs_languages) (.Params.highlightjs_languages)) }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
         {{ with $.Scratch.Get "hl_languages" }}
@@ -14,5 +13,4 @@
         hljs.initHighlightingOnLoad();
     </script>
     {{ $.Scratch.Delete "hl_languages" }}
-{{ end }}
 {{- end -}}
