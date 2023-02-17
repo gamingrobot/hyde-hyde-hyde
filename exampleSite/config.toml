@@ -38,9 +38,14 @@ theme = "hyde-hyde-hyde"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
     showBuiltWith = true
 
+    # https://mermaid.js.org/
+    mermaid = true
+    mermaid_theme = "default"
+    mermaid_align = "center"
+
     # https://highlightjs.org
     highlightjs = true
-    highlightjsstyle = "github"
+    highlightjs_style = "github"
     
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."

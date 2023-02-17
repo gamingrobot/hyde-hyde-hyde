@@ -4,6 +4,7 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 {{ partial "highlight-js.html" . }}
+{{ partial "mermaid.html" . }}
 {{ with .Site.Params.toc }}
 {{ if and (eq . "tocbot") (ne $include_toc false) }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.js"></script>

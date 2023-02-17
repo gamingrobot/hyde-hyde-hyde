@@ -15,7 +15,7 @@ __`hyde-hyde-hyde`__ is a [Hugo](https://gohugo.io)'s theme inspired and derived
 - Add better note shortcodes
 
 ### TODO
- - MermaidJS
+
  - Add copy button to code sections
 
 ## Usage
@@ -42,12 +42,6 @@ After that, choose `hyde-hyde-hyde` as the main theme.
 theme = "hyde-hyde-hyde"
 ```
 
-* `config.yaml`
-
-```yaml
-theme : "hyde-hyde-hyde"
-```
-
 That's all. You can render your site using `hugo` and see `hyde-hyde-hyde` in action.
 
 ### Options
@@ -55,10 +49,12 @@ That's all. You can render your site using `hugo` and see `hyde-hyde-hyde` in ac
 __`hyde-hyde-hyde`__ essentially inherits most of Hyde's [options](https://github.com/spf13/hyde#options). There are some extra options though
 
 * `highlightjs = true`: use [highlight.js](https://highlightjs.org) instead of Hugo built-in support for code highlighting
+  * `highlightjs_style="highlight-style"`: only when `highlightjs = true`, please choose one of many _highlight.js_'s [styles](https://highlightjs.org/static/demo).
+  * `highlightjs_languages = ["swift", "objectivec"]` 
 
-  * `highlightjsstyle="highlight-style"`: only when `highlightjs = true`, please choose one of many _highlight.js_'s [styles](https://highlightjs.org/static/demo).
-    * `highlight = false`  (default `true`)
-    * `highlightjslanguages = ["swift", "objectivec"]` 
+*  `mermaid = true`: Enable mermaid.js diagrams
+   * `mermaid_theme = "default"` Select a [mermaid.js theme](https://mermaid.js.org/config/theming.html)
+   * `mermaid_align = "center"` Select an alignment for diagrams
 
 * `postNavigation = true|false` (default `true`): Setting to `false` will disable the navigation _Previous Post_/ _Next Post_
 

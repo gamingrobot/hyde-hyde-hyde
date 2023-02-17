@@ -15,15 +15,24 @@ Custom shortcodes in hyde-hyde-hyde
 
 {{< fig src="/img/hugo.png" link="/" caption="this is a caption" alt="this is alt text" align="" width="50px" height="50px" >}}
 
-<br>
-
 ---
 
 ## kbd
 
 {{< kbd testing >}}
 
-<br>
+---
+
+## mermaid
+
+{{< mermaid >}}
+pie
+    title French Words I Know
+    "Merde" : 50
+    "Oui" : 35
+    "Alors" : 10
+    "Non" : 5
+{{< /mermaid >}}
 
 ---
 

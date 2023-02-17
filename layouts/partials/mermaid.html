@@ -1,0 +1,11 @@
+{{- if (.Site.Params.mermaid) -}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.4.0/mermaid.min.js"></script>
+    <script type="text/javascript">
+        var config = {
+            startOnLoad:true,
+            theme:'{{ .Site.Params.mermaid_theme | default "default" }}',
+            align:'{{ .Site.Params.mermaid_align | default "center" }}'
+        };
+        mermaid.initialize(config);
+    </script>
+{{- end -}}
