@@ -62,6 +62,8 @@ __`hyde-hyde-hyde`__ essentially inherits most of Hyde's [options](https://githu
 
 *  `include_toc = false`: Setting to `false` in FrontMatter will disable too short TOC data as your want. 
 
+* Search page, to use create [example search page](exampleSite/content/search.md)
+
 ### Customizations
 
 * Most of the customizable SCSS styles in [_assets/scss/hyde-hyde_](assets/scss/hyde-hyde) and Hugo templates in [_hyde-hyde/layouts_](layouts) are modularized and can be altered/adapted easily.
