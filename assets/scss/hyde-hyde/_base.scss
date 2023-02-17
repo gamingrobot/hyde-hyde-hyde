@@ -71,28 +71,63 @@ blockquote {
 	@extend %quotebox;
 }
 
+%notebox {
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	@extend %quotebox;
+}
+
+%noteicon {
+	margin-right: 0.5rem;
+	position: relative;
+	top: 6px;
+}
+
 .tip {
+	color: rgba(46, 46, 46, 0.77);
 	background-color: rgba(123, 247, 144, 0.2);
 	border-left-color: #03b303;
-	@extend %quotebox;
+	@extend %notebox;
+}
+
+.tip-icon {
+	color: #03b303;
+	@extend %noteicon;
 }
 
 .info {
+	color: rgba(46, 46, 46, 0.77);
 	background-color: #e1f5fe;
 	border-left-color: #0070cb;
-	@extend %quotebox;
+	@extend %notebox;
+}
+
+.info-icon {
+	color: #0070cb;
+	@extend %noteicon;
 }
 
 .warning {
+	color: rgba(46, 46, 46, 0.77);
 	background-color: rgb(255, 243, 205);
 	border-left-color: #ef9c03;
-	@extend %quotebox;
+	@extend %notebox;
+}
+
+.warning-icon {
+	color: #ef9c03;
+	@extend %noteicon;
 }
 
 .danger {
+	color: rgba(46, 46, 46, 0.77);
 	background-color: rgba(248, 215, 218, 0.56);
 	border-left-color: #df3c30;
-	@extend %quotebox;
+	@extend %notebox;
+}
+
+.danger-icon {
+	color: #df3c30;
+	@extend %noteicon;
 }
 
 kbd {

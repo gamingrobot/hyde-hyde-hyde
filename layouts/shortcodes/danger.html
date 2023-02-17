@@ -1,4 +1,3 @@
 <blockquote class="danger">
-    <strong>{{ .Get 0 | default "Danger" | markdownify }}</strong><br>
-    {{ .Inner | markdownify }}
+    <span class="danger-icon">{{- readFile "/assets/svg/alert-triangle.svg" | safeHTML -}}</span><span>{{ .Inner | markdownify }}</span>
 </blockquote>

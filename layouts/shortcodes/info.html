@@ -1,4 +1,3 @@
 <blockquote class="info">
-    <strong>{{ .Get 0 | default "Info" | markdownify }}</strong><br>
-    {{ .Inner | markdownify }}
+    <span class="info-icon">{{- readFile "/assets/svg/info.svg" | safeHTML -}}</span><span>{{ .Inner | markdownify }}</span>
 </blockquote>
