@@ -14,11 +14,11 @@
   {{ if ne $include_toc false }}
     <div class="toc-wrapper">
       <input type="checkbox" id="tocToggle">
-      <label for="tocToggle">Table of Content</label>
+      <label for="tocToggle">Table of Contents</label>
       {{ if eq . "hugo" }}
           {{ $tableOfContents }}
       {{ else if eq . "tocbot"}}
-        <div class="toc" id="TableOfContents"></div>
+        <div class="toc"></div>
       {{ end }}
     </div>
   {{ end }}

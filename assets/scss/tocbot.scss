@@ -6,6 +6,8 @@
   background: $toc-background-color;
   padding-left: 0rem;
   padding-top: 1em;
+  margin-top: 0;
+  max-height: 100%;
   > .toc-list {
     overflow: hidden;
     position: relative;
@@ -14,6 +16,7 @@
     }
   }
 }
+
 .toc-list {
   margin: 0;
   padding-left: 1rem;

@@ -1,7 +1,7 @@
 // mobile ~320..480px
 // 320px ~ 16rem/16px ~ 18.8235/17px ~ 17.7778/18px
 // 480px ~ 30rem/16px ~ 28.2353rem/17px ~ 26.6667rem/18px
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 768px) {
   html,
   body {
     font-size: $small-device-font-size;
@@ -20,7 +20,6 @@
     padding: 5rem 1rem;
     li {
       padding: .3rem 0;
-      font-size: 23px;
     }
   }
   .hidden-tablet {
@@ -95,6 +94,7 @@
     text-align: left;
     top: 0;
     width: $sidebar-width;
+    display: block;
   }
   .sidebar-sticky {
     left: 1rem;
@@ -103,9 +103,8 @@
     top: 1rem;
   }
   .content {
-    margin-left: $content-margin-left;
-    margin-right: $content-margin-right;
-    max-width: $content-max-width;
+    padding-left: $content-margin-left;
+    max-width: $content-max-width + $content-margin-left;
   }
   .layout-reverse {
     .sidebar {
@@ -113,8 +112,8 @@
       right: 0;
     }
     .content {
-      margin-left: $content-margin-right;
-      margin-right: $content-margin-left;
+      padding-left: $content-margin-right;
+      max-width: $content-max-width + $content-margin-right;
     }
   }
   .col-sm-8 {
@@ -143,10 +142,6 @@
   html,
   body {
     font-size: $large-device-font-size;
-  }
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
   }
   .col-md-4 {
     float: left;
