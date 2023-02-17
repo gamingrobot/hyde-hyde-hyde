@@ -86,15 +86,16 @@ For example, for the [exampleSite](https://github.com/htr3n/hyde-hyde-hyde/tree/
 
 ![A post in hyde-hyde-hyde](images/post.png)
 
-### Portfolio
+### Mobile
 
-![Portfolio hyde-hyde-hyde](images/portfolio.png)
+![mobile mode in hyde-hyde-hyde](images/mobile1.png)
 
+![mobile mode in hyde-hyde-hyde](images/mobile2.png)
 
+### Note Shortcodes
 
-### Mobile Mode with Collapsible Menu
+![note shortcodes in hyde-hyde-hyde](images/shortcodes.png)
 
-<img src='images/mobile.png' alt='hyde-hyde-hyde in mobile mode' width='60%'>
 
 ## Author(s)
 

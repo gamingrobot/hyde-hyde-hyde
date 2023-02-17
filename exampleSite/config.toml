@@ -54,7 +54,7 @@ theme = "hyde-hyde-hyde"
     #UtterancesTheme = "..." # github-light or github-dark
 
     # Table of contents
-    #toc = none, "hugo", or "tocbot"
+    toc = "tocbot" # none, "hugo", or "tocbot"
 
 ## Main Menu
 [[menu.main]]
