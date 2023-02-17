@@ -13,7 +13,7 @@
   {{ with .Site.Params.toc }}
   {{ if ne $include_toc false }}
     <div class="toc-wrapper">
-      <input type="checkbox" id="tocToggle">
+      <input type="checkbox" id="tocToggle" checked>
       <label for="tocToggle">Table of Contents</label>
       {{ if eq . "hugo" }}
           {{ $tableOfContents }}
