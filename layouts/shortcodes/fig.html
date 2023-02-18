@@ -7,7 +7,7 @@
 {{ $permalink := $.Page.Permalink }}
 {{ $image := .Get "src" }}
 {{ $image_link_absolute := (findRE "^/" $image) }}
-<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+<figure {{ with .Get "align" }}class="{{.}}"{{ end }}>
   {{ if .Get "link"}}
     <a href="{{ .Get "link" }}"
     {{ with .Get "target" }} target="{{ . }}"{{ end }}
@@ -22,7 +22,6 @@
         {{ if .Get "alt" }}alt="{{ .Get "alt" | markdownify | plainify }}"
         {{ else if .Get "caption" }}alt="{{ .Get "caption" | markdownify | plainify }}"
         {{ end }}
-        {{ with .Get "align" }}align="{{ . }}"{{ end }}
         {{ with .Get "height" }}width="{{ . }}"{{ end }}
         {{ with .Get "width" }}width="{{ . }}"{{ end }} style="max-width: 100%;"
          />
@@ -31,7 +30,7 @@
   {{ if ($.Scratch.Get "caption") }}
     <figcaption>
       <span class="img--caption">
-        Figure {{ $.Page.Scratch.Get "fig" }}. {{ $.Scratch.Get "caption" | markdownify | plainify }}
+        {{ $.Scratch.Get "caption" | markdownify | plainify }}
         {{ if .Get "attr" }}
           [{{- with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink"}}</a>{{ end -}}]
         {{ end }}
@@ -39,5 +38,4 @@
     </figcaption>
   {{ end }}
 </figure>
-{{ .Page.Scratch.Add "fig" 1 }}
 {{ $.Scratch.Delete "caption"}}

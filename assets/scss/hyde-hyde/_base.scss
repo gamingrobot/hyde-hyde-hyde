@@ -50,6 +50,28 @@ figure {
 	max-width: 100%;
 	margin: 0;
 	padding: 0;
+	img {
+		margin: 0;
+	}
+}
+
+figure.center {
+	text-align: center;
+	img {
+		margin: auto;
+	}
+}
+
+figure.left {
+	text-align: center;
+	float: left;
+	margin-right: 1rem;
+}
+
+figure.right {
+	text-align: center;
+	float: right;
+	margin-left: 1rem;
 }
 
 %quotebox {
