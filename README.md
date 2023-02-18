@@ -106,3 +106,9 @@ For example, for the [exampleSite](https://github.com/htr3n/hyde-hyde-hyde/tree/
 ## License
 
 Open sourced under the [MIT license](LICENSE.md)
+
+## Notes for rendering exampleSite
+
+```
+./hugo server --minify --source exampleSite/ --themesDir ../..
+```
