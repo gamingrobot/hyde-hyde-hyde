@@ -40,39 +40,37 @@
     cursor: pointer; }
 
   //For hiding/showing the sidebar
-  .sidebar-wrapper label {
+  .sidebar-label {
     display: block;
     cursor: pointer;
-    color: $sidebar-color;
     position: absolute;
     top: 1.5rem;
     left: 1rem;
     width: 3rem;
     height: 2rem;
-    z-index: 99;
     overflow: hidden;
+    font-weight: bold;
     //outline: dashed 1px black;
   }
 
-  .sidebar-wrapper label svg {
+  .sidebar-label svg {
     display: block;
     margin: auto;
     height: 2rem;
     width: 2rem;
   }
 
-  input#menuToggle {
-    display: none;
-  }
-  input#menuToggle + label {
-    font-weight: bold;
+  #sidebarBurger {
+    z-index: 90;
+    color: $sidebar-color;
   }
 
-  input#menuToggle:checked + label {
+  #sidebarClose {
+    z-index: 99;
     color: #fff;
   }
 
-  input#menuToggle:checked ~ .sidebar {
+  input#sidebarToggle:checked ~ .sidebar {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     transition: transform .4s ease;
@@ -130,8 +128,8 @@
     }
   }
 
-  input#menuToggle,
-  input#menuToggle + label {
+  input#sidebarToggle,
+  .sidebar-label {
     display: none;
   }
 }

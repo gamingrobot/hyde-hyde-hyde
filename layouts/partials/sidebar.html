@@ -1,37 +1,38 @@
 <!-- Sidebar -->
 <div class="sidebar-wrapper">
-<input type="checkbox" id="menuToggle">
-<label for="menuToggle">{{- readFile "/assets/svg/menu.svg" | safeHTML -}}</label>
-  <div class="sidebar">
-    <div class="container {{ with .Site.Params.sidebarSticky }}sidebar-sticky{{ end }}">
-      <div class="sidebar-about">
-        <span class="site__title">
-          <a href="{{ .Site.BaseURL }}">
-          {{ with .Site.Params.logoimage }}
-          {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
-          {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
-            <img src="{{$logoImage}}" alt="Logo Image" class="element--center">
-          {{ else }}
-            {{ .Site.Title }}
-          {{ end }}
-          </a>
-        </span>
-        {{ if (isset .Site.Params "authorimage") }}
-          {{ with .Site.Params.authorimage }}
-          {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
-          {{ $authorImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
-          <div class="author-image">
-            <img src="{{$authorImage}}" alt="Author Image" class="img--circle img--headshot element--center">
-          </div>
-          {{ end }}
+<input type="checkbox" id="sidebarToggle" style="display: none">
+<label id="sidebarBurger" class="sidebar-label" for="sidebarToggle">{{- readFile "/assets/svg/menu.svg" | safeHTML -}}</label>
+<div class="sidebar">
+  <label id="sidebarClose" class="sidebar-label" for="sidebarToggle">{{- readFile "/assets/svg/x.svg" | safeHTML -}}</label>
+  <div class="container {{ with .Site.Params.sidebarSticky }}sidebar-sticky{{ end }}">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="{{ .Site.BaseURL }}">
+        {{ with .Site.Params.logoimage }}
+        {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
+        {{ $logoImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
+          <img src="{{$logoImage}}" alt="Logo Image" class="element--center">
+        {{ else }}
+          {{ .Site.Title }}
         {{ end }}
-        <p class="site__description">
-          {{ with .Site.Params.description }} {{.}} {{end}}
-        </p>
-      </div>
-      <div class="sidebar-menu">
-        {{ partial "sidebar/menu.html" . }}
-      </div>
+        </a>
+      </span>
+      {{ if (isset .Site.Params "authorimage") }}
+        {{ with .Site.Params.authorimage }}
+        {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
+        {{ $authorImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
+        <div class="author-image">
+          <img src="{{$authorImage}}" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        {{ end }}
+      {{ end }}
+      <p class="site__description">
+        {{ with .Site.Params.description }} {{.}} {{end}}
+      </p>
+    </div>
+    <div class="sidebar-menu">
+      {{ partial "sidebar/menu.html" . }}
     </div>
   </div>
+</div>
 </div>
