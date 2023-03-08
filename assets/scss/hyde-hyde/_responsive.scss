@@ -44,9 +44,9 @@
     display: block;
     cursor: pointer;
     position: absolute;
-    top: 1.5rem;
-    left: 1rem;
-    width: 3rem;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 2rem;
     height: 2rem;
     overflow: hidden;
     font-weight: bold;
@@ -56,13 +56,13 @@
   .sidebar-label svg {
     display: block;
     margin: auto;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   #sidebarBurger {
     z-index: 90;
-    color: $sidebar-color;
+    color: #fff;
   }
 
   #sidebarClose {
@@ -74,6 +74,11 @@
     transform: translateX(0);
     -webkit-transform: translateX(0);
     transition: transform .4s ease;
+  }
+
+  .topbar {
+    z-index: 50;
+    display: block;
   }
 
 }
@@ -132,6 +137,11 @@
   .sidebar-label {
     display: none;
   }
+
+  .topbar {
+    display: none;
+  }
+
 }
 
 // Large devices (laptops/desktops, 992px and up)
