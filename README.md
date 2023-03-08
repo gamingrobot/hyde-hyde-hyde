@@ -8,6 +8,7 @@ __`hyde-hyde-hyde`__ is a [Hugo](https://gohugo.io)'s theme inspired and derived
 - Remove Portfolio
 - Use local fonts
 - Remove social from sidebar
+- Improved mobile sidebar
 - Move copyright to bottom
 - Remove comments
 - Added search
