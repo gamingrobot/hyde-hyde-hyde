@@ -7,17 +7,14 @@
     font-size: $small-device-font-size;
   }
   .sidebar {
-    transform: translateX(-$sidebar-width);
-    -webkit-transform: translateX(-$sidebar-width);
-    transition: transform .4s ease;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -$sidebar-width;
     height: 100%;
     overflow-y: auto;
     width: $sidebar-width;
     z-index: 95;
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     li {
       padding: .3rem 0;
     }
@@ -72,6 +69,12 @@
   }
 
   input#sidebarToggle:checked ~ .sidebar {
+    transform: translateX($sidebar-width);
+    -webkit-transform: translateX($sidebar-width);
+    transition: transform .4s ease;
+  }
+
+  input#sidebarToggle ~ .sidebar {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     transition: transform .4s ease;
